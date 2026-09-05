@@ -9,8 +9,8 @@ export function SiteFooter() {
             src="/brand/manatee-mobility-logo-horizontal.png"
             alt="Manatee Mobility"
             width={160}
-            height={107}
-            className="h-7 w-auto opacity-90"
+            height={32}
+            className="h-8 w-auto opacity-90"
           />
           <p className="max-w-xs text-sm leading-relaxed text-deep-ink/55">
             Autonomous Tesla Cybercab ride-hail for Naples and Southwest

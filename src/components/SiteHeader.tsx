@@ -10,7 +10,7 @@ export function SiteHeader() {
             src="/brand/manatee-mobility-logo-horizontal.png"
             alt="Manatee Mobility"
             width={180}
-            height={120}
+            height={36}
             priority
             className="h-8 w-auto sm:h-9"
           />
@@ -25,10 +25,7 @@ export function SiteHeader() {
           <a href="#naples" className="transition hover:text-deep-ink">
             Naples
           </a>
-          <a
-            href="#coming-soon"
-            className="tracking-[0.08em] text-deep-ink/55 uppercase transition hover:text-deep-ink"
-          >
+          <a href="#coming-soon" className="transition hover:text-deep-ink">
             On the horizon
           </a>
         </nav>

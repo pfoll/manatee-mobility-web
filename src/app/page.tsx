@@ -44,8 +44,8 @@ export default function HomePage() {
                 ride-hail to Naples — calm, local, and built for how this
                 place actually moves.
               </p>
-              {/* Status only — not a filled Teal CTA */}
-              <p className="qh-fade qh-fade-delay-3 text-sm font-medium tracking-[0.14em] text-horizon-indigo/55 uppercase">
+              {/* Sole Dawn Gold on the page — status hairline, not a CTA */}
+              <p className="qh-fade qh-fade-delay-3 text-sm font-medium tracking-[0.14em] text-dawn-gold uppercase">
                 Coming soon
               </p>
             </div>
@@ -124,14 +124,14 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Naples focus — single Dawn Gold hairline accent */}
+        {/* Naples focus — muted hairline (Dawn Gold reserved for hero status) */}
         <section
           id="naples"
           className="scroll-mt-20 px-6 py-20 sm:px-8 sm:py-28"
         >
           <div className="mx-auto max-w-[720px] text-center">
             <div
-              className="mx-auto mb-8 h-px w-16 bg-dawn-gold"
+              className="mx-auto mb-8 h-px w-16 bg-horizon-indigo/8"
               aria-hidden
             />
             <h2 className="font-display text-3xl font-medium text-deep-ink sm:text-4xl">
@@ -158,7 +158,7 @@ export default function HomePage() {
               Cybercab rides for Naples are coming. Interest signup isn’t open
               yet.
             </p>
-            <div className="rounded-2xl border border-horizon-indigo/10 bg-surface-elevated p-6 shadow-[0_1px_0_rgba(36,52,74,0.04)] sm:p-8">
+            <div className="rounded-2xl border border-horizon-indigo/8 bg-surface-elevated p-6 shadow-[0_1px_0_rgba(36,52,74,0.04)] sm:p-8">
               <ComingSoonNote />
             </div>
           </div>
