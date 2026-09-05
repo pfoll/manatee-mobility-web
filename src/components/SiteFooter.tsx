@@ -7,11 +7,11 @@ export function SiteFooter() {
       <div className="mx-auto flex max-w-[1120px] flex-col gap-8 px-6 py-14 sm:flex-row sm:items-end sm:justify-between sm:px-8">
         <div className="space-y-3">
           <Image
-            src="/brand/manatee-mobility-logo-stacked.png"
+            src="/brand/manatee-mobility-logo-horizontal.png"
             alt="Manatee Mobility"
-            width={120}
-            height={120}
-            className="h-8 w-auto opacity-90"
+            width={160}
+            height={107}
+            className="h-7 w-auto opacity-90"
           />
           <p className="max-w-xs text-sm leading-relaxed text-deep-ink/55">
             Autonomous Tesla Cybercab ride-hail for Naples and Southwest

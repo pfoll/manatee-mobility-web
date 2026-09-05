@@ -124,7 +124,9 @@ export function WaitlistForm({ utms, id = "waitlist" }: Props) {
           role="status"
           aria-live="polite"
           className={`text-sm leading-relaxed ${
-            state.ok ? "text-gulf-teal" : "text-red-800/80"
+            state.ok
+              ? "text-gulf-teal"
+              : "rounded-lg border border-horizon-indigo/15 bg-warm-sand/40 px-3 py-2 text-horizon-indigo"
           }`}
         >
           {state.message}

@@ -7,31 +7,33 @@ export function SiteHeader() {
       <div className="mx-auto flex max-w-[1120px] items-center justify-between px-6 py-6 sm:px-8">
         <Link href="/" className="inline-flex items-center gap-3">
           <Image
-            src="/brand/manatee-mobility-logo-stacked.png"
+            src="/brand/manatee-mobility-logo-horizontal.png"
             alt="Manatee Mobility"
-            width={160}
-            height={160}
+            width={180}
+            height={120}
             priority
-            className="h-10 w-auto sm:h-11"
+            className="h-8 w-auto sm:h-9"
           />
         </Link>
-        <nav className="hidden items-center gap-8 text-sm text-deep-ink/70 sm:flex">
-          <a href="#about" className="transition hover:text-deep-ink">
-            About
-          </a>
-          <a href="#how-it-works" className="transition hover:text-deep-ink">
-            How it works
-          </a>
-          <a href="#naples" className="transition hover:text-deep-ink">
-            Naples
-          </a>
+        <div className="flex items-center gap-6">
+          <nav className="hidden items-center gap-8 text-sm text-deep-ink/70 sm:flex">
+            <a href="#about" className="transition hover:text-deep-ink">
+              About
+            </a>
+            <a href="#how-it-works" className="transition hover:text-deep-ink">
+              How it works
+            </a>
+            <a href="#naples" className="transition hover:text-deep-ink">
+              Naples
+            </a>
+          </nav>
           <a
             href="#waitlist"
-            className="rounded-full bg-gulf-teal px-4 py-2 font-medium text-soft-cloud transition hover:bg-gulf-teal/90"
+            className="rounded-lg bg-gulf-teal px-4 py-2 text-sm font-medium text-soft-cloud transition hover:bg-gulf-teal/90"
           >
             Join waitlist
           </a>
-        </nav>
+        </div>
       </div>
     </header>
   );

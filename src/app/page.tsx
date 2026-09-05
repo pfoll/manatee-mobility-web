@@ -109,7 +109,7 @@ export default async function HomePage({ searchParams }: PageProps) {
                   <span className="font-display text-sm tracking-[0.12em] text-horizon-indigo/50">
                     {item.step}
                   </span>
-                  <h3 className="text-xl font-semibold text-deep-ink">
+                  <h3 className="text-xl font-medium text-deep-ink">
                     {item.title}
                   </h3>
                   <p className="leading-relaxed text-deep-ink/65">{item.body}</p>
