@@ -11,21 +11,21 @@ export default function HomePage() {
       <main>
         {/* Hero — protected left type; Cybercab optically small right/lower */}
         <section className="relative overflow-hidden px-6 pb-20 pt-32 sm:px-8 sm:pb-28 sm:pt-40">
-          {/* Quiet Horizon Cybercab — soft Soft Cloud mask; never competes with type */}
+          {/* Quiet Horizon Cybercab — optically small right/lower; Soft Cloud left mask */}
           <div aria-hidden className="pointer-events-none absolute inset-0">
-            <div className="absolute bottom-[-4%] right-[-2%] h-[58%] w-[72%] min-w-[260px] sm:bottom-[-2%] sm:right-0 sm:h-[62%] sm:w-[52%] lg:w-[48%]">
+            <div className="absolute inset-y-0 right-0 w-[68%] min-w-[280px] sm:w-[58%] lg:w-[54%]">
               <Image
                 src="/brand/quiet-horizon-hero-cybercab-small.png"
                 alt=""
                 fill
                 priority
-                sizes="(max-width: 640px) 75vw, 48vw"
-                className="object-contain object-right-bottom opacity-[0.72] sm:opacity-[0.85]"
+                sizes="(max-width: 640px) 75vw, 54vw"
+                className="object-cover object-[78%_72%] opacity-[0.78] sm:opacity-[0.92]"
               />
-              {/* Soft Cloud mask — left/top dissolve so Deep Ink type stays readable */}
-              <div className="absolute inset-0 bg-gradient-to-r from-soft-cloud via-soft-cloud/70 to-transparent" />
-              <div className="absolute inset-0 bg-gradient-to-t from-soft-cloud via-soft-cloud/20 to-soft-cloud/50" />
-              <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-soft-cloud to-transparent" />
+              {/* Soft Cloud mask — left dissolve for type; keep cab visible lower-right */}
+              <div className="absolute inset-0 bg-[linear-gradient(90deg,var(--qh-soft-cloud)_0%,color-mix(in_srgb,var(--qh-soft-cloud)_55%,transparent)_38%,transparent_62%)]" />
+              <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-soft-cloud/35" />
+              <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-soft-cloud/55 to-transparent" />
             </div>
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_12%_85%,color-mix(in_srgb,var(--qh-warm-sand)_22%,transparent),transparent_45%)]" />
           </div>
