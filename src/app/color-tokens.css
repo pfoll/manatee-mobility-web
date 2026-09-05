@@ -1,0 +1,29 @@
+/**
+ * Manatee Mobility — Quiet Horizon
+ * Color tokens (CSS custom properties)
+ * Matches QUIET_HORIZON_BRAND_SYSTEM.md
+ */
+
+:root {
+  /* Brand palette */
+  --qh-gulf-teal: #3A6F6E;
+  --qh-warm-sand: #D2C2A8;
+  --qh-horizon-indigo: #24344A;
+  --qh-dawn-gold: #C9A66B;
+  --qh-soft-cloud: #F4F1EA;
+  --qh-deep-ink: #161A1F;
+
+  /* Surfaces */
+  --qh-surface-light: #F4F1EA;
+  --qh-surface-light-elevated: #FAF8F3;
+  --qh-surface-dark: #12161B;
+  --qh-surface-dark-elevated: #1E242C;
+
+  /* Semantic aliases */
+  --qh-color-primary: var(--qh-gulf-teal);
+  --qh-color-ground: var(--qh-warm-sand);
+  --qh-color-depth: var(--qh-horizon-indigo);
+  --qh-color-accent: var(--qh-dawn-gold);
+  --qh-color-canvas: var(--qh-soft-cloud);
+  --qh-color-text: var(--qh-deep-ink);
+}
