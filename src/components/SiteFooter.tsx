@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 export function SiteFooter() {
   return (
@@ -20,11 +19,6 @@ export function SiteFooter() {
         </div>
         <div className="space-y-2 text-sm text-deep-ink/50">
           <p>Naples, Florida</p>
-          <p>
-            <Link href="/#coming-soon" className="hover:text-deep-ink">
-              Coming soon
-            </Link>
-          </p>
           <p className="pt-2 text-xs text-deep-ink/40">
             © {new Date().getFullYear()} Manatee Mobility. All rights reserved.
           </p>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ComingSoonNote } from "@/components/ComingSoonNote";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -8,14 +9,30 @@ export default function HomePage() {
       <SiteHeader />
 
       <main>
-        {/* Hero — metaphor before diagram; protected negative space */}
+        {/* Hero — sky metaphor; protected left type; status not CTA */}
         <section className="relative overflow-hidden px-6 pb-20 pt-32 sm:px-8 sm:pb-28 sm:pt-40">
-          <div
-            aria-hidden
-            className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_70%_0%,color-mix(in_srgb,var(--qh-warm-sand)_45%,transparent),transparent_55%),radial-gradient(ellipse_at_20%_100%,color-mix(in_srgb,var(--qh-horizon-indigo)_8%,transparent),transparent_50%)]"
-          />
+          {/* Quiet Horizon atmosphere — right/upper sky as negative space */}
+          <div aria-hidden className="pointer-events-none absolute inset-0">
+            <div className="absolute inset-y-0 right-0 w-[62%] min-w-[280px] sm:w-[58%] lg:w-[55%]">
+              <Image
+                src="/brand/quiet-horizon-hero-atmosphere.png"
+                alt=""
+                fill
+                priority
+                sizes="(max-width: 640px) 70vw, 55vw"
+                className="object-cover object-[68%_28%] opacity-[0.58] sm:opacity-[0.72]"
+              />
+              {/* Soft fade into Soft Cloud so Deep Ink type stays readable */}
+              <div className="absolute inset-0 bg-gradient-to-r from-soft-cloud via-soft-cloud/55 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-soft-cloud via-transparent to-soft-cloud/40" />
+              <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-soft-cloud to-transparent" />
+            </div>
+            {/* Subtle warm wash only on far left — not a substitute for the sky asset */}
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_12%_85%,color-mix(in_srgb,var(--qh-warm-sand)_28%,transparent),transparent_45%)]" />
+          </div>
+
           <div className="relative mx-auto max-w-[1120px]">
-            <div className="max-w-[720px] space-y-8">
+            <div className="max-w-[560px] space-y-8 lg:max-w-[620px]">
               <p className="qh-fade text-sm font-medium tracking-[0.08em] text-horizon-indigo/70 uppercase">
                 Naples, Florida
               </p>
@@ -27,14 +44,10 @@ export default function HomePage() {
                 ride-hail to Naples — calm, local, and built for how this
                 place actually moves.
               </p>
-              <div className="qh-fade qh-fade-delay-3">
-                <a
-                  href="#coming-soon"
-                  className="inline-flex items-center justify-center rounded-lg bg-gulf-teal px-6 py-3.5 text-base font-semibold text-soft-cloud transition hover:bg-gulf-teal/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gulf-teal focus-visible:ring-offset-2 focus-visible:ring-offset-soft-cloud"
-                >
-                  Coming soon
-                </a>
-              </div>
+              {/* Status only — not a filled Teal CTA */}
+              <p className="qh-fade qh-fade-delay-3 text-sm font-medium tracking-[0.14em] text-horizon-indigo/55 uppercase">
+                Coming soon
+              </p>
             </div>
 
             {/* Trust strip */}

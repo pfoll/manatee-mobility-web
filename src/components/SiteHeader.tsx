@@ -15,25 +15,23 @@ export function SiteHeader() {
             className="h-8 w-auto sm:h-9"
           />
         </Link>
-        <div className="flex items-center gap-6">
-          <nav className="hidden items-center gap-8 text-sm text-deep-ink/70 sm:flex">
-            <a href="#about" className="transition hover:text-deep-ink">
-              About
-            </a>
-            <a href="#how-it-works" className="transition hover:text-deep-ink">
-              How it works
-            </a>
-            <a href="#naples" className="transition hover:text-deep-ink">
-              Naples
-            </a>
-          </nav>
+        <nav className="hidden items-center gap-8 text-sm text-deep-ink/70 sm:flex">
+          <a href="#about" className="transition hover:text-deep-ink">
+            About
+          </a>
+          <a href="#how-it-works" className="transition hover:text-deep-ink">
+            How it works
+          </a>
+          <a href="#naples" className="transition hover:text-deep-ink">
+            Naples
+          </a>
           <a
             href="#coming-soon"
-            className="rounded-lg bg-gulf-teal px-4 py-2 text-sm font-medium text-soft-cloud transition hover:bg-gulf-teal/90"
+            className="tracking-[0.08em] text-deep-ink/55 uppercase transition hover:text-deep-ink"
           >
-            Coming soon
+            On the horizon
           </a>
-        </div>
+        </nav>
       </div>
     </header>
   );
