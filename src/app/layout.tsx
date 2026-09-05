@@ -18,7 +18,7 @@ const sourceSans = Source_Sans_3({
 export const metadata: Metadata = {
   title: "Manatee Mobility — Autonomous rides in Naples, Florida",
   description:
-    "Quiet, local Cybercab ride-hail for Naples and Southwest Florida. Join the waitlist.",
+    "Quiet, local Cybercab ride-hail for Naples and Southwest Florida. Coming soon.",
   metadataBase: new URL("https://manateemobility.com"),
   openGraph: {
     title: "Manatee Mobility",

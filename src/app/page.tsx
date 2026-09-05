@@ -1,16 +1,8 @@
+import { ComingSoonNote } from "@/components/ComingSoonNote";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
-import { WaitlistForm } from "@/components/WaitlistForm";
-import { readUtmsFromSearchParams } from "@/lib/utm";
 
-type PageProps = {
-  searchParams: Promise<Record<string, string | string[] | undefined>>;
-};
-
-export default async function HomePage({ searchParams }: PageProps) {
-  const params = await searchParams;
-  const utms = readUtmsFromSearchParams(params);
-
+export default function HomePage() {
   return (
     <>
       <SiteHeader />
@@ -37,10 +29,10 @@ export default async function HomePage({ searchParams }: PageProps) {
               </p>
               <div className="qh-fade qh-fade-delay-3">
                 <a
-                  href="#waitlist"
+                  href="#coming-soon"
                   className="inline-flex items-center justify-center rounded-lg bg-gulf-teal px-6 py-3.5 text-base font-semibold text-soft-cloud transition hover:bg-gulf-teal/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gulf-teal focus-visible:ring-offset-2 focus-visible:ring-offset-soft-cloud"
                 >
-                  Join the waitlist
+                  Coming soon
                 </a>
               </div>
             </div>
@@ -71,8 +63,8 @@ export default async function HomePage({ searchParams }: PageProps) {
                 the pace of this coast.
               </p>
               <p>
-                No hype. No dense app clutter. Just a clear path from waitlist
-                to first ride when service opens in Naples.
+                No hype. No dense app clutter. Just a clear path to first ride
+                when service opens in Naples.
               </p>
             </div>
           </div>
@@ -91,8 +83,8 @@ export default async function HomePage({ searchParams }: PageProps) {
               {[
                 {
                   step: "01",
-                  title: "Join the list",
-                  body: "Share your email. We’ll keep you informed as Naples service takes shape — nothing more.",
+                  title: "Stay tuned",
+                  body: "We’re getting Naples service ready. Interest signup will open here when the time is right.",
                 },
                 {
                   step: "02",
@@ -140,20 +132,21 @@ export default async function HomePage({ searchParams }: PageProps) {
           </div>
         </section>
 
-        {/* Waitlist */}
+        {/* Coming soon — informational; no waitlist DB */}
         <section
-          id="waitlist"
+          id="coming-soon"
           className="scroll-mt-20 border-t border-horizon-indigo/8 bg-[color:var(--qh-surface-light-elevated)] px-6 py-20 sm:px-8 sm:py-28"
         >
           <div className="mx-auto max-w-[560px]">
             <h2 className="font-display text-3xl font-medium text-deep-ink sm:text-4xl">
-              Join the Naples waitlist
+              On the horizon
             </h2>
             <p className="mt-4 mb-10 text-lg leading-relaxed text-deep-ink/65">
-              Be among the first to know when Cybercab rides open here.
+              Cybercab rides for Naples are coming. Interest signup isn’t open
+              yet.
             </p>
             <div className="rounded-2xl border border-horizon-indigo/10 bg-surface-elevated p-6 shadow-[0_1px_0_rgba(36,52,74,0.04)] sm:p-8">
-              <WaitlistForm utms={utms} />
+              <ComingSoonNote />
             </div>
           </div>
         </section>

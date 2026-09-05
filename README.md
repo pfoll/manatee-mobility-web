@@ -1,6 +1,9 @@
 # Manatee Mobility Web
 
-Marketing and waitlist site for Manatee Mobility — autonomous Tesla Cybercab ride-hail in Naples, Florida.
+**Informational go-live v1:** Coming soon note on the live page; waitlist/DB deferred (no DATABASE_URL required). Build succeeds without DATABASE_URL.
+
+
+Marketing site (informational go-live) for Manatee Mobility — autonomous Tesla Cybercab ride-hail in Naples, Florida.
 
 Stack: Next.js App Router, TypeScript, Tailwind CSS v4, Neon Postgres (@neondatabase/serverless).
 
@@ -15,7 +18,7 @@ Brand: Quiet Horizon (Soft Cloud canvas, Gulf Teal CTAs, Fraunces + Source Sans 
 
 npm run build succeeds without DATABASE_URL. Use npm start after a production build.
 
-## Neon setup
+## Deferred: Neon waitlist (not required for go-live)
 
 1. Create a project at console.neon.tech
 2. Put the connection string in .env.local as DATABASE_URL
@@ -26,7 +29,7 @@ Schema: waitlist_signups (unique email, optional name/phone, city default Naples
 ## Vercel deploy
 
 1. Import pfoll/manatee-mobility-web in Vercel
-2. Add env var DATABASE_URL
+2. DATABASE_URL not needed for informational v1
 3. Deploy with the Next.js preset
 4. Attach custom domain after DNS cleanup below
 
@@ -40,7 +43,7 @@ Before adding Vercel records, clean parking leftovers in Namecheap Advanced DNS:
 
 Do not leave parking and Vercel records competing.
 
-## Waitlist behavior
+## Deferred: Waitlist behavior (code kept in repo)
 
 - Server Action: src/app/actions/waitlist.ts
 - Duplicate email: friendly already-on-the-list message

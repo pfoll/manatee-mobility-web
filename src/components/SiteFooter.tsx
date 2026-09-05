@@ -21,8 +21,8 @@ export function SiteFooter() {
         <div className="space-y-2 text-sm text-deep-ink/50">
           <p>Naples, Florida</p>
           <p>
-            <Link href="/#waitlist" className="hover:text-deep-ink">
-              Waitlist
+            <Link href="/#coming-soon" className="hover:text-deep-ink">
+              Coming soon
             </Link>
           </p>
           <p className="pt-2 text-xs text-deep-ink/40">

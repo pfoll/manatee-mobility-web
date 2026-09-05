@@ -28,10 +28,10 @@ export function SiteHeader() {
             </a>
           </nav>
           <a
-            href="#waitlist"
+            href="#coming-soon"
             className="rounded-lg bg-gulf-teal px-4 py-2 text-sm font-medium text-soft-cloud transition hover:bg-gulf-teal/90"
           >
-            Join waitlist
+            Coming soon
           </a>
         </div>
       </div>
