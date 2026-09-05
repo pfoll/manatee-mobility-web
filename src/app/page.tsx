@@ -9,26 +9,25 @@ export default function HomePage() {
       <SiteHeader />
 
       <main>
-        {/* Hero — sky metaphor; protected left type; status not CTA */}
+        {/* Hero — protected left type; Cybercab optically small right/lower */}
         <section className="relative overflow-hidden px-6 pb-20 pt-32 sm:px-8 sm:pb-28 sm:pt-40">
-          {/* Quiet Horizon atmosphere — right/upper sky as negative space */}
+          {/* Quiet Horizon Cybercab — soft Soft Cloud mask; never competes with type */}
           <div aria-hidden className="pointer-events-none absolute inset-0">
-            <div className="absolute inset-y-0 right-0 w-[62%] min-w-[280px] sm:w-[58%] lg:w-[55%]">
+            <div className="absolute bottom-[-4%] right-[-2%] h-[58%] w-[72%] min-w-[260px] sm:bottom-[-2%] sm:right-0 sm:h-[62%] sm:w-[52%] lg:w-[48%]">
               <Image
-                src="/brand/quiet-horizon-hero-atmosphere.png"
+                src="/brand/quiet-horizon-hero-cybercab-small.png"
                 alt=""
                 fill
                 priority
-                sizes="(max-width: 640px) 70vw, 55vw"
-                className="object-cover object-[68%_28%] opacity-[0.58] sm:opacity-[0.72]"
+                sizes="(max-width: 640px) 75vw, 48vw"
+                className="object-contain object-right-bottom opacity-[0.72] sm:opacity-[0.85]"
               />
-              {/* Soft fade into Soft Cloud so Deep Ink type stays readable */}
-              <div className="absolute inset-0 bg-gradient-to-r from-soft-cloud via-soft-cloud/55 to-transparent" />
-              <div className="absolute inset-0 bg-gradient-to-t from-soft-cloud via-transparent to-soft-cloud/40" />
-              <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-soft-cloud to-transparent" />
+              {/* Soft Cloud mask — left/top dissolve so Deep Ink type stays readable */}
+              <div className="absolute inset-0 bg-gradient-to-r from-soft-cloud via-soft-cloud/70 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-soft-cloud via-soft-cloud/20 to-soft-cloud/50" />
+              <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-soft-cloud to-transparent" />
             </div>
-            {/* Subtle warm wash only on far left — not a substitute for the sky asset */}
-            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_12%_85%,color-mix(in_srgb,var(--qh-warm-sand)_28%,transparent),transparent_45%)]" />
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_12%_85%,color-mix(in_srgb,var(--qh-warm-sand)_22%,transparent),transparent_45%)]" />
           </div>
 
           <div className="relative mx-auto max-w-[1120px]">
@@ -37,17 +36,18 @@ export default function HomePage() {
                 Naples, Florida
               </p>
               <h1 className="qh-fade qh-fade-delay-1 font-display text-[2.75rem] leading-[1.12] font-medium text-deep-ink sm:text-5xl md:text-6xl">
-                Quiet rides for the Gulf coast.
+                Rides that feel like Naples
               </h1>
               <p className="qh-fade qh-fade-delay-2 max-w-xl text-lg leading-relaxed text-deep-ink/70 sm:text-xl">
-                Manatee Mobility is bringing autonomous Tesla Cybercab
-                ride-hail to Naples — calm, local, and built for how this
-                place actually moves.
+                Local Cybercab. Door to door. Never rushed, never loud.
               </p>
               {/* Sole Dawn Gold on the page — status hairline, not a CTA */}
-              <p className="qh-fade qh-fade-delay-3 text-sm font-medium tracking-[0.14em] text-dawn-gold uppercase">
-                Coming soon
-              </p>
+              <div className="qh-fade qh-fade-delay-3 space-y-3">
+                <div className="h-px w-12 bg-dawn-gold" aria-hidden />
+                <p className="text-sm font-medium tracking-[0.14em] text-dawn-gold uppercase">
+                  Coming soon
+                </p>
+              </div>
             </div>
 
             {/* Trust strip */}
