@@ -9,10 +9,10 @@ export function SiteHeader() {
           <Image
             src="/brand/manatee-mobility-logo-horizontal.png"
             alt="Manatee Mobility"
-            width={180}
-            height={36}
+            width={220}
+            height={44}
             priority
-            className="h-8 w-auto sm:h-9"
+            className="h-10 w-auto sm:h-11"
           />
         </Link>
         <nav className="hidden items-center gap-8 text-sm text-deep-ink/70 sm:flex">
